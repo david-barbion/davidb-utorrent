@@ -1,0 +1,13 @@
+[Unit]
+Description=µtorrent server
+Documentation=http://help.utorrent.com/
+
+[Service]
+Type=simple
+User=<%= @run_as %>
+Group=<%= @run_as %>
+PIDFile=<%= @pid_dir %>/<%= @pid_file %>
+ExecStart=<%= @bin_dir %>/utserver -pidfile <%= @pid_dir %>/<%= @pid_file %> -settingspath <%= @settings_dir %> -configfile <%= @config_dir %>/<%= @config_file %> -logfile <%= @log_dir %>/<%= @log_file %>
+
+[Install]
+WantedBy=multi-user.target

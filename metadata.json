@@ -1,0 +1,30 @@
+{
+  "name": "davidb-utorrent",
+  "version": "0.1.0",
+  "author": "davidb",
+  "summary": "µtorrent server module",
+  "license": "Apache 2.0",
+  "source": "https://github.com/david-barbion/davidb-utorrent",
+  "project_page": "https://github.com/david-barbion/davidb-utorrent",
+  "issues_url": "https://github.com/david-barbion/davidb-utorrent/issues",
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"},
+    {"version_requirement":">= 0.8.1","name":"camptocamp-archive"}
+  ]
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "7",
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ]
+
+}
+
